@@ -1,7 +1,13 @@
 <?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require '../vendor/autoload.php';
+
 $success = false;
 $error = '';
 
+// If form is submitted
 if (isset($_POST['submit_contact'])) {
     $name    = htmlspecialchars(trim($_POST['name']));
     $email   = htmlspecialchars(trim($_POST['email']));
@@ -14,15 +20,30 @@ if (isset($_POST['submit_contact'])) {
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $error = 'Please enter a valid email address.';
     } else {
-        $to      = 'logicalclothing1@gmail.com';
-        $subject = 'New Contact Message from ' . $name;
-        $body    = "Name: $name\nEmail: $email\nPhone: $phone\n\nMessage:\n$message";
-        $headers = "From: $email\r\nReply-To: $email\r\n";
+        $mail = new PHPMailer(true);
+        try {
+            // SMTP configuration
+            $mail->isSMTP();
+            $mail->Host       = 'smtp.gmail.com';            // Use the correct SMTP server
+            $mail->SMTPAuth   = true;
+            $mail->Username   = 'your_gmail@gmail.com';      // Your sending Gmail address
+            $mail->Password   = 'your_app_password';         // Your App Password
+            $mail->SMTPSecure = 'tls';
+            $mail->Port       = 587;
 
-        if (mail($to, $subject, $body, $headers)) {
+            // Recipients
+            $mail->setFrom($email, $name);                  // Use user input as From
+            $mail->addAddress('logicalclothing1@gmail.com', 'Logical Clothing'); // Main destination
+
+            // Content
+            $mail->isHTML(false);
+            $mail->Subject = 'New Contact Message from ' . $name;
+            $mail->Body    = "Name: $name\nEmail: $email\nPhone: $phone\n\nMessage:\n$message";
+
+            $mail->send();
             $success = true;
-        } else {
-            $error = 'Failed to send message. Please try emailing us directly.';
+        } catch (Exception $e) {
+            $error = "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
         }
     }
 }
