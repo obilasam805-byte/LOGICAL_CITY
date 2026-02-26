@@ -229,7 +229,7 @@
     <div class="container-fluid px-lg-5">
         <a class="navbar-brand" href="index.php">
             <div style="display:flex; align-items:center; gap:8px;">
-                <img src="uploads/logo_1767762447.png" height="199" alt="Logo">
+                <img src="uploads/logo_1767762447.png" height="60px" alt="Logo">
             </div>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
