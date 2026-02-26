@@ -3,8 +3,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 // Require Composer's autoload if you installed with Composer:
-require 'vendor/autoload.php';
-
+require __DIR__ . '/../vendor/autoload.php';
 $mail = new PHPMailer(true);
 
 try {
