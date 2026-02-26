@@ -147,7 +147,7 @@
             object-fit: contain;
 
             /* GOLD BORDER */
-            border: 3px solid var(--color-safari-gold, #c5a059);
+            border: 3px solid var(--color-gold, #c5a059);
             border-radius: 2px;
 
             display: block;
@@ -170,7 +170,7 @@
             .tailoring-img-col { padding: 2rem; min-height: 350px; }
         }
 
-        .tailor-subtitle { color: var(--color-safari-gold, #c5a059); font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1rem; display: block; }
+        .tailor-subtitle { color: var(--color-gold, #c5a059); font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1rem; display: block; }
         .tailor-title { font-size: 2.2rem; font-weight: 300; color: #111; margin-bottom: 1.5rem; line-height: 1.2; }
         .tailor-desc { color: #555; font-size: 1.05rem; line-height: 1.8; font-weight: 300; }
         .tailor-desc p { margin-bottom: 1rem; }
@@ -190,7 +190,7 @@
         }
         .divider-icon-box {
             padding: 0 20px;
-            color: var(--color-safari-gold, #c5a059);
+            color: var(--color-gold, #c5a059);
             font-size: 1.2rem;
             position: relative;
         }
@@ -223,10 +223,10 @@
         .toggle-header:hover { background-color: rgba(0,0,0,0.02); }
 
         .header-content h3 { font-size: 1.75rem; font-weight: 300; margin: 0; color: #222; }
-        .header-content span { font-size: 0.85rem; text-transform: uppercase; color: var(--color-safari-gold); letter-spacing: 1px; font-weight: 700; display: block; margin-bottom: 5px; }
+        .header-content span { font-size: 0.85rem; text-transform: uppercase; color: var(--color-gold); letter-spacing: 1px; font-weight: 700; display: block; margin-bottom: 5px; }
 
         .toggle-icon { transition: transform 0.3s ease; color: #aaa; font-size: 1.2rem; }
-        .toggle-btn[aria-expanded="true"] .toggle-icon { transform: rotate(180deg); color: var(--color-safari-gold); }
+        .toggle-btn[aria-expanded="true"] .toggle-icon { transform: rotate(180deg); color: var(--color-gold); }
 
         /* Toggle Body */
         .toggle-body { padding: 2rem 3rem 3rem 3rem; }
@@ -240,9 +240,9 @@
         .stepper-wrapper::before { content: ""; position: absolute; top: 15px; bottom: 0; left: 28px; width: 1px; background: #e0e0e0; z-index: 1; }
         .stepper-item { position: relative; display: flex; align-items: flex-start; margin-bottom: 2.5rem; z-index: 2; }
         .stepper-item:last-child { margin-bottom: 0; }
-        .step-counter { flex-shrink: 0; width: 36px; height: 36px; background: var(--color-safari-gold, #c5a059); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; margin-right: 1.5rem; box-shadow: 0 0 0 5px #fff; }
+        .step-counter { flex-shrink: 0; width: 36px; height: 36px; background: var(--color-gold, #c5a059); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; margin-right: 1.5rem; box-shadow: 0 0 0 5px #fff; }
         .step-content h5 { font-size: 1.1rem; margin-bottom: 0.5rem; }
-        .text-gold { color: var(--color-safari-gold, #c5a059); }
+        .text-gold { color: var(--color-gold, #c5a059); }
 
         .cta-tailoring { background: #111; color: #fff; padding: 6rem 0; text-align: center; }
     </style></head>
@@ -321,7 +321,7 @@
 
                     <!-- IMAGE COLUMN -->
                     <div class="col-lg-6 tailoring-img-col order-lg-1 order-1">
-                        <img src="uploads/tailoring/e0586aee83f08d7466621a08b47c8f91.jpg" alt="The Logical City Philosophy" class="tailoring-img">
+                        <img src="Assets/IMG_4551.JPG.jpeg" alt="The Logical City Philosophy" class="tailoring-img">
                     </div>
 
                     <!-- TEXT COLUMN -->
@@ -344,7 +344,7 @@
 
                     <!-- IMAGE COLUMN -->
                     <div class="col-lg-6 tailoring-img-col order-lg-2 order-1">
-                        <img src="uploads/tailoring/2c8ef12aa9c75243be066379bfe38ed0.jpg" alt="The Fabric Selection" class="tailoring-img">
+                        <img src="Assets/Screen2.jpg" alt="The Fabric Selection" class="tailoring-img">
                     </div>
 
                     <!-- TEXT COLUMN -->
@@ -367,7 +367,7 @@
 
                     <!-- IMAGE COLUMN -->
                     <div class="col-lg-6 tailoring-img-col order-lg-1 order-1">
-                        <img src="uploads/tailoring/46f58d249fa5c86db6316beaa03a58ea.jpg" alt="The Finer Details" class="tailoring-img">
+                        <img src="Assets/Screen1.jpg" alt="The Finer Details" class="tailoring-img">
                     </div>
 
                     <!-- TEXT COLUMN -->
@@ -390,7 +390,7 @@
 
                     <!-- IMAGE COLUMN -->
                     <div class="col-lg-6 tailoring-img-col order-lg-2 order-1">
-                        <img src="uploads/tailoring/d5bdda9623af524940207af3346a95f2.jpg" alt="The Consultation and Measure" class="tailoring-img">
+                        <img src="Assets/Screen3.jpg" alt="The Consultation and Measure" class="tailoring-img">
                     </div>
 
                     <!-- TEXT COLUMN -->
