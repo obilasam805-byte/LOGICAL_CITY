@@ -1,16 +1,24 @@
 <?php
 $uri = urldecode(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
 
-// Serve static files directly (images, css, js)
-if ($uri !== '/' && file_exists(__DIR__ . '/frontend' . $uri)) {
-    return false;
+// Remove leading slash
+$path = ltrim($uri, '/');
+
+// Full path to the file in frontend
+$file = __DIR__ . '/frontend/' . $path;
+
+// If it's a real file (image, css, js, php), serve it
+if ($path !== '' && file_exists($file) && !is_dir($file)) {
+    if (pathinfo($file, PATHINFO_EXTENSION) === 'php') {
+        require $file;
+    } else {
+        // Serve static files (images, css, js, etc.)
+        $mime = mime_content_type($file);
+        header('Content-Type: ' . $mime);
+        readfile($file);
+    }
+    exit;
 }
 
-// Route to the requested PHP file
-$file = __DIR__ . '/frontend' . $uri;
-
-if (file_exists($file) && !is_dir($file)) {
-    require $file;
-} else {
-    require __DIR__ . '/frontend/index.php';
-}
+// Default: serve frontend/index.php
+require __DIR__ . '/frontend/index.php';
