@@ -24,7 +24,7 @@ if (isset($_POST['submit_contact'])) {
         $apiKey = getenv('RESEND_API_KEY');
         $payload = json_encode([
                 'from'     => 'Logical City <onboarding@resend.dev>',
-                'to'       => ['samallela86@gmail.com'],
+                'to'       => ['Obilasam3@gmail.com'],
                 'subject'  => 'New Contact Message from ' . $name,
                 'text'     => "Name: $name\nEmail: $email\nPhone: $phone\n\nMessage:\n$message",
                 'reply_to' => $email,
