@@ -7,5 +7,12 @@
             root * /app/frontend
             php_server
             file_server
-            encode gzip
+            encode gzip zstd
+
+                   # Cache static files for 30 days
+                   @static {
+                           file
+                           path *.jpg *.jpeg *.png *.gif *.webp *.ico *.css *.js *.svg *.mp4 *.woff *.woff2
+                           }
+            header @static Cache-Control "public, max-age=2592000"
             }
