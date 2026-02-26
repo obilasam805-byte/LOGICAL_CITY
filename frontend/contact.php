@@ -3,10 +3,8 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-
 require __DIR__ . '/../vendor/autoload.php';
+use Resend;
 
 $success = false;
 $error = '';
@@ -24,30 +22,20 @@ if (isset($_POST['submit_contact'])) {
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $error = 'Please enter a valid email address.';
     } else {
-        $mail = new PHPMailer(true);
-        try {
-            // SMTP configuration
-            $mail->isSMTP();
-            $mail->Host       = 'smtp.gmail.com';            // Use the correct SMTP server
-            $mail->SMTPAuth   = true;
-            $mail->Username   = 'Obilasam3@gmail.com';      // Your sending Gmail address
-            $mail->Password   = 'zytp mjoz cjzi glkh';         // Your App Password
-            $mail->SMTPSecure = 'tls';
-            $mail->Port       = 587;
+        $client = Resend::client(getenv('RESEND_API_KEY'));
 
-            // Recipients
-            $mail->setFrom($email, $name);                  // Use user input as From
-            $mail->addAddress('samallela86@gmail.com', 'Logical Clothing'); // Main destination
+        $result = $client->emails->send([
+                'from'    => 'Logical City <onboarding@resend.dev>',
+                'to'      => ['samallela86@gmail.com'],
+                'subject' => 'New Contact Message from ' . $name,
+                'text'    => "Name: $name\nEmail: $email\nPhone: $phone\n\nMessage:\n$message",
+                'reply_to' => $email,
+        ]);
 
-            // Content
-            $mail->isHTML(false);
-            $mail->Subject = 'New Contact Message from ' . $name;
-            $mail->Body    = "Name: $name\nEmail: $email\nPhone: $phone\n\nMessage:\n$message";
-
-            $mail->send();
+        if ($result->id) {
             $success = true;
-        } catch (Exception $e) {
-            $error = "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+        } else {
+            $error = 'Message could not be sent. Please try again.';
         }
     }
 }
