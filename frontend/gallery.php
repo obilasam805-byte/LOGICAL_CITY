@@ -279,12 +279,12 @@
                            href = Full Image URL
                            src = Thumbnail URL
                         -->
-                        <a href="uploads/gallery/0b561c250e35b229dccaee74a8677513.webp"
+                        <a href="Assets/Gal.jpg"
                            class="gallery-wrapper"
                            title="">
 
                             <!-- Lazy loaded thumbnail image -->
-                            <img src="uploads/gallery/0b561c250e35b229dccaee74a8677513.webp"
+                            <img src="Assets/Gal.jpg"
                                  alt=""
                                  class="gallery-thumb-img"
                                  loading="lazy"
@@ -305,12 +305,12 @@
                            href = Full Image URL
                            src = Thumbnail URL
                         -->
-                        <a href="uploads/gallery/2e3408cf6895f32b0226acbe8e2923da.webp"
+                        <a href="Assets/IMG_4550.JPG.jpeg"
                            class="gallery-wrapper"
                            title="">
 
                             <!-- Lazy loaded thumbnail image -->
-                            <img src="uploads/gallery/2e3408cf6895f32b0226acbe8e2923da.webp"
+                            <img src="Assets/IMG_4550.JPG.jpeg"
                                  alt=""
                                  class="gallery-thumb-img"
                                  loading="lazy"
@@ -331,12 +331,12 @@
                            href = Full Image URL
                            src = Thumbnail URL
                         -->
-                        <a href="uploads/gallery/d731cba710ad235041d15ab4b1f094c8.webp"
+                        <a href="Assets/IMG_4559.JPG.jpeg"
                            class="gallery-wrapper"
                            title="">
 
                             <!-- Lazy loaded thumbnail image -->
-                            <img src="uploads/gallery/d731cba710ad235041d15ab4b1f094c8.webp"
+                            <img src="Assets/IMG_4559.JPG.jpeg"
                                  alt=""
                                  class="gallery-thumb-img"
                                  loading="lazy"
@@ -357,12 +357,12 @@
                            href = Full Image URL
                            src = Thumbnail URL
                         -->
-                        <a href="uploads/gallery/1156341800c27dc91b111207eaaa7669.webp"
+                        <a href="Assets/IMG_4560.JPG.jpeg"
                            class="gallery-wrapper"
                            title="">
 
                             <!-- Lazy loaded thumbnail image -->
-                            <img src="uploads/gallery/1156341800c27dc91b111207eaaa7669.webp"
+                            <img src="Assets/IMG_4561.JPG.jpeg"
                                  alt=""
                                  class="gallery-thumb-img"
                                  loading="lazy"
@@ -383,12 +383,12 @@
                            href = Full Image URL
                            src = Thumbnail URL
                         -->
-                        <a href="uploads/gallery/6404de0720689f88d90de4b5ec68bafc.webp"
+                        <a href="Assets/IMG_4562.JPG.jpeg"
                            class="gallery-wrapper"
                            title="">
 
                             <!-- Lazy loaded thumbnail image -->
-                            <img src="uploads/gallery/6404de0720689f88d90de4b5ec68bafc.webp"
+                            <img src="Assets/IMG_4562.JPG.jpeg"
                                  alt=""
                                  class="gallery-thumb-img"
                                  loading="lazy"
@@ -409,12 +409,12 @@
                            href = Full Image URL
                            src = Thumbnail URL
                         -->
-                        <a href="uploads/gallery/c8968ec6894ed811cfeb78e44cf90878.webp"
+                        <a href="Assets/IMG_4563.JPG.jpeg"
                            class="gallery-wrapper"
                            title="">
 
                             <!-- Lazy loaded thumbnail image -->
-                            <img src="uploads/gallery/c8968ec6894ed811cfeb78e44cf90878.webp"
+                            <img src="Assets/IMG_4564.JPG.jpeg"
                                  alt=""
                                  class="gallery-thumb-img"
                                  loading="lazy"
@@ -435,12 +435,12 @@
                            href = Full Image URL
                            src = Thumbnail URL
                         -->
-                        <a href="uploads/gallery/eed79dc3a0b4d31754a658a25259cbc2.webp"
+                        <a href="Assets/IMG_4565.JPG.jpeg"
                            class="gallery-wrapper"
                            title="">
 
                             <!-- Lazy loaded thumbnail image -->
-                            <img src="uploads/gallery/eed79dc3a0b4d31754a658a25259cbc2.webp"
+                            <img src="Assets/IMG_4553.JPG.jpeg"
                                  alt=""
                                  class="gallery-thumb-img"
                                  loading="lazy"
@@ -461,12 +461,12 @@
                            href = Full Image URL
                            src = Thumbnail URL
                         -->
-                        <a href="uploads/gallery/e322593c7be0eb6bb6afe108d726049d.webp"
+                        <a href="Assets/IMG_4567.JPG.jpeg"
                            class="gallery-wrapper"
                            title="">
 
                             <!-- Lazy loaded thumbnail image -->
-                            <img src="uploads/gallery/e322593c7be0eb6bb6afe108d726049d.webp"
+                            <img src="Assets/IMG_4567.JPG.jpeg"
                                  alt=""
                                  class="gallery-thumb-img"
                                  loading="lazy"
@@ -487,12 +487,12 @@
                            href = Full Image URL
                            src = Thumbnail URL
                         -->
-                        <a href="uploads/gallery/79376eb361b2f909c2bc5ae23aa90802.webp"
+                        <a href="Assets/IMG_4568.JPG.jpeg"
                            class="gallery-wrapper"
                            title="">
 
                             <!-- Lazy loaded thumbnail image -->
-                            <img src="uploads/gallery/79376eb361b2f909c2bc5ae23aa90802.webp"
+                            <img src="Assets/IMG_4568.JPG.jpeg"
                                  alt=""
                                  class="gallery-thumb-img"
                                  loading="lazy"
@@ -513,12 +513,12 @@
                            href = Full Image URL
                            src = Thumbnail URL
                         -->
-                        <a href="uploads/gallery/822877d3a4ff2127b18cf2fae6621fe7.webp"
+                        <a href="Assets/IMG_4569.JPG.jpeg"
                            class="gallery-wrapper"
                            title="">
 
                             <!-- Lazy loaded thumbnail image -->
-                            <img src="uploads/gallery/822877d3a4ff2127b18cf2fae6621fe7.webp"
+                            <img src="Assets/IMG_4570.JPG.jpeg"
                                  alt=""
                                  class="gallery-thumb-img"
                                  loading="lazy"
@@ -539,12 +539,12 @@
                            href = Full Image URL
                            src = Thumbnail URL
                         -->
-                        <a href="uploads/gallery/36828603b2d11aadf19a28ad2950686a.webp"
+                        <a href="Assets/IMG_4556.JPG.jpeg"
                            class="gallery-wrapper"
                            title="">
 
                             <!-- Lazy loaded thumbnail image -->
-                            <img src="uploads/gallery/36828603b2d11aadf19a28ad2950686a.webp"
+                            <img src="Assets/IMG_4556.JPG.jpeg"
                                  alt=""
                                  class="gallery-thumb-img"
                                  loading="lazy"
@@ -565,12 +565,12 @@
                            href = Full Image URL
                            src = Thumbnail URL
                         -->
-                        <a href="uploads/gallery/5e5b40419114894719c3295384319016.webp"
+                        <a href="Assets/IMG_4557.JPG.jpeg"
                            class="gallery-wrapper"
                            title="">
 
                             <!-- Lazy loaded thumbnail image -->
-                            <img src="uploads/gallery/5e5b40419114894719c3295384319016.webp"
+                            <img src="Assets/IMG_4557.JPG.jpeg"
                                  alt=""
                                  class="gallery-thumb-img"
                                  loading="lazy"
@@ -591,12 +591,12 @@
                            href = Full Image URL
                            src = Thumbnail URL
                         -->
-                        <a href="uploads/gallery/37ceaf556151b14d5e0849e139a51d8f.webp"
+                        <a href="Assets/IMG_4552.JPG.jpeg"
                            class="gallery-wrapper"
                            title="">
 
                             <!-- Lazy loaded thumbnail image -->
-                            <img src="uploads/gallery/37ceaf556151b14d5e0849e139a51d8f.webp"
+                            <img src="Assets/IMG_4552.JPG.jpeg"
                                  alt=""
                                  class="gallery-thumb-img"
                                  loading="lazy"
@@ -617,12 +617,12 @@
                            href = Full Image URL
                            src = Thumbnail URL
                         -->
-                        <a href="uploads/gallery/257d660aeef7fe5c3651368824ceb6fc.webp"
+                        <a href="Assets/IMG_4549.JPG.jpeg"
                            class="gallery-wrapper"
                            title="">
 
                             <!-- Lazy loaded thumbnail image -->
-                            <img src="uploads/gallery/257d660aeef7fe5c3651368824ceb6fc.webp"
+                            <img src="Assets/IMG_4549.JPG.jpeg"
                                  alt=""
                                  class="gallery-thumb-img"
                                  loading="lazy"
@@ -643,12 +643,12 @@
                            href = Full Image URL
                            src = Thumbnail URL
                         -->
-                        <a href="uploads/gallery/345da348f8ba26aa5b80ea08df330e2a.webp"
+                        <a href="Assets/IMG_4547.JPG.jpeg"
                            class="gallery-wrapper"
                            title="">
 
                             <!-- Lazy loaded thumbnail image -->
-                            <img src="uploads/gallery/345da348f8ba26aa5b80ea08df330e2a.webp"
+                            <img src="Assets/IMG_4547.JPG.jpeg"
                                  alt=""
                                  class="gallery-thumb-img"
                                  loading="lazy"
@@ -669,12 +669,12 @@
                            href = Full Image URL
                            src = Thumbnail URL
                         -->
-                        <a href="uploads/gallery/c338013d782463df88a8f55d8ddc76f6.webp"
+                        <a href="Assets/WhatsApp%20Image%202026-02-23%20at%2012.03.57.jpeg"
                            class="gallery-wrapper"
                            title="">
 
                             <!-- Lazy loaded thumbnail image -->
-                            <img src="uploads/gallery/c338013d782463df88a8f55d8ddc76f6.webp"
+                            <img src="Assets/WhatsApp%20Image%202026-02-23%20at%2012.03.57.jpeg"
                                  alt=""
                                  class="gallery-thumb-img"
                                  loading="lazy"

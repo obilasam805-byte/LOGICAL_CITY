@@ -82,3 +82,15 @@
 .back-to-top.visible {
     display: flex;
 }
+
+.hero-line-frame{
+    position: relative;
+    top: 25px;
+    margin-bottom: 12px;
+    margin-top: 5px;
+}
+
+.text-muted{
+    font-family: "Bodoni MT", serif;
+    font-size: 20px;
+}

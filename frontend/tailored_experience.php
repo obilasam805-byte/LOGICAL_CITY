@@ -226,7 +226,7 @@
                         <div class="row g-0">
                             <!-- IMAGE COLUMN -->
                             <div class="col-lg-6 tailoring-img-col order-lg-1 order-1">
-                                                                    <img src="uploads/tailoring/e0586aee83f08d7466621a08b47c8f91.jpg" alt="The Logical City Philosophy" class="tailoring-img">
+                                                                    <img src="Assets/IMG_4551.JPG.jpeg" alt="The Logical City Philosophy" class="tailoring-img">
                                                             </div>
 
                             <!-- TEXT COLUMN -->
@@ -246,7 +246,7 @@
                         <div class="row g-0">
                             <!-- IMAGE COLUMN -->
                             <div class="col-lg-6 tailoring-img-col order-lg-2 order-1">
-                                                                    <img src="uploads/tailoring/2c8ef12aa9c75243be066379bfe38ed0.jpg" alt="The Fabric Selection" class="tailoring-img">
+                                                                    <img src="Assets/Screen2.jpg" alt="The Fabric Selection" class="tailoring-img">
                                                             </div>
 
                             <!-- TEXT COLUMN -->
@@ -266,7 +266,7 @@
                         <div class="row g-0">
                             <!-- IMAGE COLUMN -->
                             <div class="col-lg-6 tailoring-img-col order-lg-1 order-1">
-                                                                    <img src="uploads/tailoring/46f58d249fa5c86db6316beaa03a58ea.jpg" alt="The Finer Details" class="tailoring-img">
+                                                                    <img src="Assets/Screen1.jpg" alt="The Finer Details" class="tailoring-img">
                                                             </div>
 
                             <!-- TEXT COLUMN -->
@@ -286,7 +286,7 @@
                         <div class="row g-0">
                             <!-- IMAGE COLUMN -->
                             <div class="col-lg-6 tailoring-img-col order-lg-2 order-1">
-                                                                    <img src="uploads/tailoring/d5bdda9623af524940207af3346a95f2.jpg" alt="The Consultation and Measure" class="tailoring-img">
+                                                                    <img src="Assets/Screen3.jpg" alt="The Consultation and Measure" class="tailoring-img">
                                                             </div>
 
                             <!-- TEXT COLUMN -->

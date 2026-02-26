@@ -140,7 +140,7 @@
         position: absolute;
         bottom: -20px;
         right: -20px;
-        background: var(--color-safari-gold);
+        background: var(--color-gold);
         color: #fff;
         padding: 1.5rem;
         border-radius: 50%;
@@ -307,9 +307,9 @@ We are a luxury bespoke tailoring house based in <strong data-start="317" data-e
                 <div class="col-lg-6" data-aos="fade-left">
                     <div class="intro-img-container">
                         <!-- Use image from DB if available, else default -->
-                        <img src="uploads/about/sect_1_1768320070.jpg" alt="LogicalCity Workshop" class="intro-img">
+                        <img src="Assets/WhatsApp%20Image%202026-02-23%20at%2012.01.58.jpeg" alt="LogicalCity Workshop" class="intro-img">
                         <div class="intro-badge">
-                            <span>...<br>Tailored<br>Experience<br>...</span>
+                            <span">...<br>Tailored<br>Experience<br>...</span>
                         </div>
                     </div>
                 </div>
@@ -326,7 +326,7 @@ We are a luxury bespoke tailoring house based in <strong data-start="317" data-e
             <!-- CEO Image (Now on Left) -->
             <div class="col-lg-5" data-aos="fade-right">
                 <div class="ceo-img-wrapper">
-                    <img src="uploads/about/sect_7_1768763107.jpeg" alt="Mandela - CEO" class="ceo-img">
+                    <img src="Assets/CEO.jpg" alt="Mandela - CEO" class="ceo-img">
                 </div>
             </div>
 
@@ -367,7 +367,7 @@ We are a luxury bespoke tailoring house based in <strong data-start="317" data-e
                     </div>
                     <!-- Image at Bottom -->
                     <div class="value-img-container shadow-sm">
-                        <img src="uploads/about/sect_8_1768722243.jpg" alt="Value 4" class="value-img">
+                        <img src="Assets/WhatsApp%20Image%202026-02-23%20at%2012.04.06.jpeg" alt="Value 4" class="value-img">
                     </div>
                 </div>
             </div>
@@ -382,7 +382,7 @@ We are a luxury bespoke tailoring house based in <strong data-start="317" data-e
                     </div>
                     <!-- Image at Bottom -->
                     <div class="value-img-container shadow-sm">
-                        <img src="uploads/about/sect_6_1767965973.jpg" alt="Value 3" class="value-img">
+                        <img src="Assets/Visit%20us-%20Suit%20635,%206th%20Floor,%20Kaunda%20Street,%20Jubilee%20Exchange%20Building📱%20Call%20us-%200727%20678%20190🀮jpg" alt="Value 3" class="value-img">
                     </div>
                 </div>
             </div>
@@ -397,7 +397,7 @@ We are a luxury bespoke tailoring house based in <strong data-start="317" data-e
                     </div>
                     <!-- Image at Bottom -->
                     <div class="value-img-container shadow-sm">
-                        <img src="uploads/about/sect_5_1767965993.jpg" alt="Value 2" class="value-img">
+                        <img src="Assets/NAVY%20BLUE%20PINSTRIPED%20DOUBLE%20BREASTED%20A%20navy%20blue%20pinstripe%20double-breasted%20suit%20is%20a%20classic%20and.jpg" alt="Value 2" class="value-img">
                     </div>
                 </div>
             </div>
@@ -412,7 +412,7 @@ We are a luxury bespoke tailoring house based in <strong data-start="317" data-e
                     </div>
                     <!-- Image at Bottom -->
                     <div class="value-img-container shadow-sm">
-                        <img src="uploads/about/sect_4_1767966015.jpg" alt="Value 1" class="value-img">
+                        <img src="Assets/Tailored%20EXPERIENCE..jpg" alt="Value 1" class="value-img">
                     </div>
                 </div>
             </div>

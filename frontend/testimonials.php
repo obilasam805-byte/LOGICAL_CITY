@@ -155,7 +155,7 @@
     height: 60px;
 
     /* Gold Gradient Background */
-    background: linear-gradient(135deg, var(--color-safari-gold) 0%, #b8860b 100%);
+    background: linear-gradient(135deg, var(--color-gold) 0%, #b8860b 100%);
 
     color: #fff;
     border-radius: 50%;
@@ -197,8 +197,8 @@
 .author-avatar {
     width: 50px;
     height: 50px;
-    background: var(--color-dark-green);
-    color: var(--color-safari-gold);
+    background: #1a3a2a;
+    color: #C5A059;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -472,7 +472,7 @@
 <section class="py-5 bg-light mt-5">
     <div class="container text-center" data-aos="fade-up">
         <h2 class="font-heading mb-4">Tailored Experience</h2>
-        <a href="begin-adventure.php" class="btn btn-outline-dark rounded-0 px-5 py-2">Let’s Tailor Your Style</a>
+        <a href="contact.php" class="btn btn-outline-dark rounded-0 px-5 py-2">Let’s Tailor Your Style</a>
     </div>
 </section>
 

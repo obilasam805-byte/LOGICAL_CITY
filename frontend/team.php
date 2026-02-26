@@ -235,7 +235,7 @@
 
 <!-- HERO SECTION -->
 <div class="team-hero-container">
-            <img src="uploads/team/team_hero_1768808065.jpg" class="team-hero-img" alt="Our Team">
+            <img src="Assets/WhatsApp%20Image%202026-02-23%20at%2012.04.09.jpeg" class="team-hero-img" alt="Our Team">
 
     <div class="container mt-5 text-center" data-aos="fade-up">
         <h1 class="display-4 font-serif mb-3">Our Team</h1>
@@ -251,7 +251,7 @@
                                                 <div class="col-sm-6 col-lg-3" data-aos="fade-up">
                         <div class="team-card">
                             <div class="team-img-wrapper">
-                                <img src="uploads/team/staff_696ddde399124.jpg" alt="Nelson Mandela" class="team-member-img" loading="lazy">
+                                <img src="Assets/WhatsApp%20Image%202026-02-23%20at%2012.04.07.jpeg" alt="Nelson Mandela" class="team-member-img" loading="lazy">
                             </div>
                             <h3 class="team-name">Nelson Mandela</h3>
                             <div class="team-designation">CEO</div>
@@ -260,7 +260,7 @@
                                     <div class="col-sm-6 col-lg-3" data-aos="fade-up">
                         <div class="team-card">
                             <div class="team-img-wrapper">
-                                <img src="uploads/team/staff_696dde32f13f8.jpg" alt="John Mdoe" class="team-member-img" loading="lazy">
+                                <img src="Assets/cover.jpg" alt="John Mdoe" class="team-member-img" loading="lazy">
                             </div>
                             <h3 class="team-name">John Mdoe</h3>
                             <div class="team-designation">Tailor</div>

@@ -26,14 +26,14 @@ if (isset($_POST['submit_contact'])) {
             $mail->isSMTP();
             $mail->Host       = 'smtp.gmail.com';            // Use the correct SMTP server
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'your_gmail@gmail.com';      // Your sending Gmail address
-            $mail->Password   = 'your_app_password';         // Your App Password
+            $mail->Username   = 'Obilasam3@gmail.com';      // Your sending Gmail address
+            $mail->Password   = 'zytp mjoz cjzi glkh';         // Your App Password
             $mail->SMTPSecure = 'tls';
             $mail->Port       = 587;
 
             // Recipients
             $mail->setFrom($email, $name);                  // Use user input as From
-            $mail->addAddress('logicalclothing1@gmail.com', 'Logical Clothing'); // Main destination
+            $mail->addAddress('samallela86@gmail.com', 'Logical Clothing'); // Main destination
 
             // Content
             $mail->isHTML(false);

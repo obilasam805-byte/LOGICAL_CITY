@@ -269,15 +269,15 @@
 
         <div class="carousel-inner">
                                                 <div class="carousel-item active bespoke-carousel-item">
-                        <img src="uploads/bespoke/suit_2609a435408bb80bdac51cb860a5d602.jpg" class="bespoke-carousel-img" alt="Bespoke Suit Detail">
+                        <img src="Assets/Screen3.jpg" class="bespoke-carousel-img" alt="Bespoke Suit Detail">
 
                                             </div>
                                     <div class="carousel-item  bespoke-carousel-item">
-                        <img src="uploads/bespoke/suit_0386b6ef43de6841b1f3ac2d2648d30f.jpeg" class="bespoke-carousel-img" alt="Bespoke Suit Detail">
+                        <img src="Assets/IMG_4568.JPG.jpeg" class="bespoke-carousel-img" alt="Bespoke Suit Detail">
 
                                             </div>
                                     <div class="carousel-item  bespoke-carousel-item">
-                        <img src="uploads/bespoke/suit_7e184df5413bdc4a84ab899c463870b8.jpg" class="bespoke-carousel-img" alt="Bespoke Suit Detail">
+                        <img src="Assets/Bespoke.jpg" class="bespoke-carousel-img" alt="Bespoke Suit Detail">
 
                                             </div>
                                     </div>

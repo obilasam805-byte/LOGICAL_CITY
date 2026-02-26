@@ -232,7 +232,7 @@
                 <!-- Image Side (From About Section) -->
                 <div class="col-lg-6 order-lg-2" data-aos="fade-left">
                     <div class="h-100 position-relative p-4" style="min-height: 400px;">
-                        <img src="uploads/about/sect_1_1768320070.jpg" alt="LogicalCity Atelier"
+                        <img src="Assets/WhatsApp%20Image%202026-02-23%20at%2012.01.58.jpeg" alt="LogicalCity Atelier"
                              class="w-100 h-100 luxury-frame" style="object-fit: cover;">
                     </div>
                 </div>
@@ -294,13 +294,13 @@
                             <div id="carousel-home-1" class="carousel slide carousel-fade position-absolute top-0 start-0 w-100 h-100" data-bs-ride="carousel" data-bs-interval="5960">
                                 <div class="carousel-inner w-100 h-100">
                                                                             <div class="carousel-item w-100 h-100 active">
-                                            <img src="uploads/products/f207eccd97476597a4d21c7569b10142.jpg" class="d-block w-100 h-100 product-img" alt="Tailored Suits" style="object-fit: cover;">
+                                            <img src="Assets/IMG_4566.JPG.jpeg" class="d-block w-100 h-100 product-img" alt="Tailored Suits" style="object-fit: cover;">
                                         </div>
                                                                             <div class="carousel-item w-100 h-100 ">
-                                            <img src="uploads/products/0dd740c8caee9e518ad6f04f40b72201.webp" class="d-block w-100 h-100 product-img" alt="Tailored Suits" style="object-fit: cover;">
+                                            <img src="Assets/IMG_4558.JPG.jpeg" class="d-block w-100 h-100 product-img" alt="Tailored Suits" style="object-fit: cover;">
                                         </div>
                                                                             <div class="carousel-item w-100 h-100 ">
-                                            <img src="uploads/products/1345f4d23c61c23b75eb3529deee1492.webp" class="d-block w-100 h-100 product-img" alt="Tailored Suits" style="object-fit: cover;">
+                                            <img src="Assets/WhatsApp%20Image%202026-02-23%20at%2012.03.57.jpeg" class="d-block w-100 h-100 product-img" alt="Tailored Suits" style="object-fit: cover;">
                                         </div>
                                                                     </div>
 
@@ -335,7 +335,7 @@
                     <div class="overflow-hidden position-relative rounded-top" style="padding-bottom: 125%; background-color: #f8f9fa;">
 
                                                     <!-- SINGLE STATIC IMAGE -->
-                            <img src="uploads/products/848ecb3420344ade63d11d4628a5b2b3.jpg" alt="African" class="position-absolute top-0 start-0 w-100 h-100 product-img" style="object-fit: cover;">
+                            <img src="Assets/African.jpg" alt="African" class="position-absolute top-0 start-0 w-100 h-100 product-img" style="object-fit: cover;">
 
                     </div>
 
@@ -359,10 +359,10 @@
                             <div id="carousel-home-3" class="carousel slide carousel-fade position-absolute top-0 start-0 w-100 h-100" data-bs-ride="carousel" data-bs-interval="5115">
                                 <div class="carousel-inner w-100 h-100">
                                                                             <div class="carousel-item w-100 h-100 active">
-                                            <img src="uploads/products/bd23e0b746f4f82e9252368fb477604d.jpg" class="d-block w-100 h-100 product-img" alt="Tailored Shirt" style="object-fit: cover;">
+                                            <img src="Assets/WhatsApp%20Image%202026-02-23%20at%2012.04.07.jpeg" class="d-block w-100 h-100 product-img" alt="Tailored Shirt" style="object-fit: cover;">
                                         </div>
                                                                             <div class="carousel-item w-100 h-100 ">
-                                            <img src="uploads/products/75869b67fd82c61a87413e715d3563d6.jpg" class="d-block w-100 h-100 product-img" alt="Tailored Shirt" style="object-fit: cover;">
+                                            <img src="Assets/Shirts.webp" class="d-block w-100 h-100 product-img" alt="Tailored Shirt" style="object-fit: cover;">
                                         </div>
                                                                     </div>
 
@@ -397,7 +397,7 @@
                     <div class="overflow-hidden position-relative rounded-top" style="padding-bottom: 125%; background-color: #f8f9fa;">
 
                                                     <!-- SINGLE STATIC IMAGE -->
-                            <img src="uploads/products/adf9e2b1cde2efbcce5ff33e40e4d4f5.jpg" alt="Wedding" class="position-absolute top-0 start-0 w-100 h-100 product-img" style="object-fit: cover;">
+                            <img src="Assets/WhatsApp%20Image%202026-02-23%20at%2012.04.09.jpeg" alt="Wedding" class="position-absolute top-0 start-0 w-100 h-100 product-img" style="object-fit: cover;">
 
                     </div>
 
