@@ -181,7 +181,7 @@ if (isset($_POST['submit_contact'])) {
 
 .content-card:hover {
     transform: translateY(-12px);
-    border-color: var(--color-safari-gold, #c5a059);
+    border-color: var(--color-gold, #c5a059);
     box-shadow: 0 16px 40px rgba(197, 160, 89, 0.2), 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -193,7 +193,7 @@ if (isset($_POST['submit_contact'])) {
     transition: all 0.3s ease;
 }
 
-.content-card:hover .content-card__title { color: var(--color-safari-gold); }
+.content-card:hover .content-card__title { color: var(--color-gold); }
 
 /* --- ICON STYLING --- */
 .icon-link {
@@ -203,7 +203,7 @@ if (isset($_POST['submit_contact'])) {
 }
 
 .content-card .icon-circle {
-    background: linear-gradient(135deg, var(--color-safari-gold, #c5a059) 0%, #d4af37 100%);
+    background: linear-gradient(135deg, var(--color-gold, #c5a059) 0%, #d4af37 100%);
     color: #fff;
     width: 80px;
     height: 80px;
@@ -244,7 +244,7 @@ if (isset($_POST['submit_contact'])) {
 
 .modern-input:focus {
     background: #fff !important;
-    border-color: var(--color-safari-gold) !important;
+    border-color: var(--color-gold) !important;
     box-shadow: 0 0 0 4px rgba(197, 160, 89, 0.15) !important;
     outline: none !important;
 }
@@ -256,7 +256,7 @@ if (isset($_POST['submit_contact'])) {
     border: none !important;
     border-radius: 8px !important;
     font-weight: 700 !important;
-    letter-spacing: 1.5px !important;
+    letter-spacing: 2px !important;
     text-transform: uppercase !important;
     padding: 15px 35px !important;
     transition: all 0.4s ease !important;
@@ -264,7 +264,7 @@ if (isset($_POST['submit_contact'])) {
 }
 
 .btn-submit-custom:hover {
-    background: linear-gradient(135deg, var(--color-safari-gold), #d4af37) !important;
+    background: linear-gradient(135deg, var(--color-gold), #d4af37) !important;
     transform: translateY(-3px) !important;
     box-shadow: 0 14px 36px rgba(197, 160, 89, 0.35) !important;
 }
@@ -278,9 +278,9 @@ if (isset($_POST['submit_contact'])) {
     height: 100%;
     transition: transform 0.3s;
 }
-.info-detail-box:hover { transform: translateY(-3px); border-color: var(--color-safari-gold); }
+.info-detail-box:hover { transform: translateY(-3px); border-color: var(--color-gold); }
 
-.info-icon { color: var(--color-safari-gold); margin-right: 10px; }
+.info-icon { color: var(--color-gold); margin-right: 10px; }
 
 .map-frame {
     border-radius: 16px;
@@ -304,7 +304,7 @@ if (isset($_POST['submit_contact'])) {
     <div class="container-fluid px-lg-5">
         <a class="navbar-brand" href="index.php">
             <div style="display:flex; align-items:center; gap:8px;">
-                <img src="uploads/logo_1767762447.png" height="60px" alt="Logo">
+                <img src="uploads/logo_1767762447.png" height="199" alt="Logo">
             </div>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">

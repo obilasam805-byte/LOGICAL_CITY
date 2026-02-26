@@ -1,29 +1,49 @@
 <?php
-
 ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 $uri = urldecode(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
-
-// Remove leading slash
 $path = ltrim($uri, '/');
-
-// Full path to the file in frontend
 $file = __DIR__ . '/frontend/' . $path;
 
-// If it's a real file (image, css, js, php), serve it
 if ($path !== '' && file_exists($file) && !is_dir($file)) {
-    if (pathinfo($file, PATHINFO_EXTENSION) === 'php') {
+    $ext = strtolower(pathinfo($file, PATHINFO_EXTENSION));
+
+    if ($ext === 'php') {
         require $file;
-    } else {
-        // Serve static files (images, css, js, etc.)
-        $mime = mime_content_type($file);
-        header('Content-Type: ' . $mime);
-        readfile($file);
+        exit;
     }
+
+    // MIME types for static files
+    $mimeTypes = [
+        'css'   => 'text/css',
+        'js'    => 'application/javascript',
+        'png'   => 'image/png',
+        'jpg'   => 'image/jpeg',
+        'jpeg'  => 'image/jpeg',
+        'gif'   => 'image/gif',
+        'webp'  => 'image/webp',
+        'svg'   => 'image/svg+xml',
+        'ico'   => 'image/x-icon',
+        'mp4'   => 'video/mp4',
+        'woff'  => 'font/woff',
+        'woff2' => 'font/woff2',
+        'ttf'   => 'font/ttf',
+        'pdf'   => 'application/pdf',
+    ];
+
+    $mime = $mimeTypes[$ext] ?? 'application/octet-stream';
+    header('Content-Type: ' . $mime);
+
+    // Important for video/large files
+    if ($ext === 'mp4') {
+        header('Content-Length: ' . filesize($file));
+        header('Accept-Ranges: bytes');
+    }
+
+    readfile($file);
     exit;
 }
 
-// Default: serve frontend/index.php
+// Default: serve index
 require __DIR__ . '/frontend/index.php';

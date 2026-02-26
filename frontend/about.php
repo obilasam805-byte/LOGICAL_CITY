@@ -121,7 +121,7 @@
         margin-top: -5rem; /* Pulls content up over hero */
         position: relative;
         z-index: 10;
-        border-top: 5px solid var(--color-safari-gold);
+        border-top: 5px solid var(--color-gold);
     }
 
     /* Story/Intro Section Images */
@@ -178,7 +178,7 @@
         transform: scale(1.03);
     }
     .ceo-quote {
-        border-left: 4px solid var(--color-safari-gold);
+        border-left: 4px solid var(--color-gold);
         font-style: italic;
         color: #555;
         background: #fff;
@@ -192,7 +192,7 @@
     .value-card {
         background: #fff;
         padding: 2rem 1.5rem;
-        border-bottom: 3px solid var(--color-safari-gold);
+        border-bottom: 3px solid var(--color-gold);
         height: 100%;
         transition: transform 0.3s ease;
         box-shadow: 0 5px 15px rgba(0,0,0,0.05);
@@ -229,7 +229,7 @@
     <div class="container-fluid px-lg-5">
         <a class="navbar-brand" href="index.php">
             <div style="display:flex; align-items:center; gap:8px;">
-                <img src="uploads/logo_1767762447.png" height="60px" alt="Logo">
+                <img src="uploads/logo_1767762447.png" height="199" alt="Logo">
             </div>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
