@@ -279,12 +279,12 @@
                            href = Full Image URL
                            src = Thumbnail URL
                         -->
-                        <a href="Assets/Gal.jpg"
+                        <a href="Assets/IMG_4550.JPG.jpeg"
                            class="gallery-wrapper"
                            title="">
 
                             <!-- Lazy loaded thumbnail image -->
-                            <img src="Assets/Gal.jpg"
+                            <img src="Assets/IMG_4550.JPG.jpeg"
                                  alt=""
                                  class="gallery-thumb-img"
                                  loading="lazy"
@@ -305,12 +305,12 @@
                            href = Full Image URL
                            src = Thumbnail URL
                         -->
-                        <a href="Assets/IMG_4550.JPG.jpeg"
+                        <a href="Assets/Gal.jpg"
                            class="gallery-wrapper"
                            title="">
 
                             <!-- Lazy loaded thumbnail image -->
-                            <img src="Assets/IMG_4550.JPG.jpeg"
+                            <img src="Assets/Gal.jpg"
                                  alt=""
                                  class="gallery-thumb-img"
                                  loading="lazy"
