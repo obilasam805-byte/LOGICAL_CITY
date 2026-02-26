@@ -4,7 +4,6 @@ ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
 require __DIR__ . '/../vendor/autoload.php';
-use Resend;
 
 $success = false;
 $error = '';
@@ -22,17 +21,17 @@ if (isset($_POST['submit_contact'])) {
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $error = 'Please enter a valid email address.';
     } else {
-        $client = \Resend\Client::make(getenv('RESEND_API_KEY'));
+        $resend = \Resend::client(getenv('RESEND_API_KEY'));
 
-        $result = $client->emails->send([
-                'from'    => 'Logical City <onboarding@resend.dev>',
-                'to'      => ['samallela86@gmail.com'],
-                'subject' => 'New Contact Message from ' . $name,
-                'text'    => "Name: $name\nEmail: $email\nPhone: $phone\n\nMessage:\n$message",
+        $result = $resend->emails->send([
+                'from'     => 'Logical City <onboarding@resend.dev>',
+                'to'       => ['samallela86@gmail.com'],
+                'subject'  => 'New Contact Message from ' . $name,
+                'text'     => "Name: $name\nEmail: $email\nPhone: $phone\n\nMessage:\n$message",
                 'reply_to' => $email,
         ]);
 
-        if ($result->id) {
+        if (isset($result->id)) {
             $success = true;
         } else {
             $error = 'Message could not be sent. Please try again.';
