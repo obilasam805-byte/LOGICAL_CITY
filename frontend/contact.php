@@ -21,7 +21,7 @@ if (isset($_POST['submit_contact'])) {
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $error = 'Please enter a valid email address.';
     } else {
-        $resend = \Resend::client(getenv('RESEND_API_KEY'));
+        $resend = \Resend\Resend::client(getenv('RESEND_API_KEY'));
 
         $result = $resend->emails->send([
                 'from'     => 'Logical City <onboarding@resend.dev>',
