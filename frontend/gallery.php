@@ -202,6 +202,31 @@
             height: 200px;
         }
     }
+
+    /* --- SKELETON LOADER ANIMATION --- */
+    @keyframes skeleton-loading {
+        0% { background-position: 200% 0; }
+        100% { background-position: -200% 0; }
+    }
+
+    /* Gold spinner for lightbox */
+    .sl-spinner {
+        border: 4px solid rgba(197,160,89,0.3);
+        border-top: 4px solid #C5A059;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        animation: spin 0.8s linear infinite;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 9999;
+    }
+    @keyframes spin {
+        0% { transform: translate(-50%, -50%) rotate(0deg); }
+        100% { transform: translate(-50%, -50%) rotate(360deg); }
+    }
 </style></head>
 <body>
 
@@ -2127,42 +2152,124 @@
 <!-- Using SimpleLightbox for robust zooming and smooth transitions -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.js"></script>
 <script>
-document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function() {
 
-    // Initialize Lightbox
-    var gallery = new SimpleLightbox('.gallery-container a', {
-        /* Options */
-        overlayOpacity: 0.9,
-        animationSpeed: 250,
-        fadeSpeed: 200,
-        showCounter: true,
-        loop: true,
-        docClose: true,
-        swipeClose: true,
-        scrollZoom: false, // Prevents accidental scrolling while zooming
+        // Add loading spinner to body
+        var spinner = document.createElement('div');
+        spinner.className = 'sl-spinner';
+        spinner.style.display = 'none';
+        document.body.appendChild(spinner);
 
-        // Caption settings
-        captions: true,
-        captionSelector: 'self',
-        captionType: 'attr',
-        captionAttribute: 'title',
-        captionPosition: 'bottom',
-        captionDelay: 250,
-    });
+        // Initialize SimpleLightbox
+        var gallery = new SimpleLightbox('.gallery-container a', {
+            overlayOpacity: 0.95,
+            animationSpeed: 250,
+            fadeSpeed: 200,
+            showCounter: true,
+            loop: true,
+            docClose: true,
+            swipeClose: true,
+            scrollZoom: false,
+            captions: true,
+            captionSelector: 'self',
+            captionType: 'attr',
+            captionAttribute: 'title',
+            captionPosition: 'bottom',
+            captionDelay: 250,
+        });
 
-    // Native Image Loading State
-    document.querySelectorAll('img[loading="lazy"]').forEach(img => {
-        if(img.complete) {
-            img.classList.add('loaded');
-            img.parentElement.classList.add('image-loaded');
-        }
+        // Show spinner when image starts loading
+        gallery.on('show.simplelightbox', function() {
+            spinner.style.display = 'block';
+        });
 
-        img.addEventListener('load', function() {
-            this.classList.add('loaded');
-            this.parentElement.classList.add('image-loaded');
+        // Hide spinner when image is loaded
+        gallery.on('shown.simplelightbox', function() {
+            spinner.style.display = 'none';
+        });
+
+        // Hide spinner on close
+        gallery.on('close.simplelightbox', function() {
+            spinner.style.display = 'none';
+        });
+
+        // Handle lazy loaded thumbnails
+        document.querySelectorAll('img[loading="lazy"]').forEach(img => {
+            if(img.complete && img.naturalWidth > 0) {
+                img.classList.add('loaded');
+                img.parentElement.classList.add('image-loaded');
+            }
+            img.addEventListener('load', function() {
+                this.classList.add('loaded');
+                this.parentElement.classList.add('image-loaded');
+            });
+            img.addEventListener('error', function() {
+                this.parentElement.classList.add('image-loaded');
+                this.style.opacity = '0.3';
+            });
         });
     });
-});
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+
+        // Add loading spinner to body
+        var spinner = document.createElement('div');
+        spinner.className = 'sl-spinner';
+        spinner.style.display = 'none';
+        document.body.appendChild(spinner);
+
+        // Initialize SimpleLightbox
+        var gallery = new SimpleLightbox('.gallery-container a', {
+            overlayOpacity: 0.95,
+            animationSpeed: 250,
+            fadeSpeed: 200,
+            showCounter: true,
+            loop: true,
+            docClose: true,
+            swipeClose: true,
+            scrollZoom: false,
+            captions: true,
+            captionSelector: 'self',
+            captionType: 'attr',
+            captionAttribute: 'title',
+            captionPosition: 'bottom',
+            captionDelay: 250,
+        });
+
+        // Show spinner when image starts loading
+        gallery.on('show.simplelightbox', function() {
+            spinner.style.display = 'block';
+        });
+
+        // Hide spinner when image is loaded
+        gallery.on('shown.simplelightbox', function() {
+            spinner.style.display = 'none';
+        });
+
+        // Hide spinner on close
+        gallery.on('close.simplelightbox', function() {
+            spinner.style.display = 'none';
+        });
+
+        // Handle lazy loaded thumbnails
+        document.querySelectorAll('img[loading="lazy"]').forEach(img => {
+            if(img.complete && img.naturalWidth > 0) {
+                img.classList.add('loaded');
+                img.parentElement.classList.add('image-loaded');
+            }
+            img.addEventListener('load', function() {
+                this.classList.add('loaded');
+                this.parentElement.classList.add('image-loaded');
+            });
+            img.addEventListener('error', function() {
+                this.parentElement.classList.add('image-loaded');
+                this.style.opacity = '0.3';
+            });
+        });
+    });
 </script>
 
 
