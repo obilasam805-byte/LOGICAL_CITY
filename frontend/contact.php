@@ -21,9 +21,8 @@ if (isset($_POST['submit_contact'])) {
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $error = 'Please enter a valid email address.';
     } else {
-        $resend = \Resend\Resend::client(getenv('RESEND_API_KEY'));
-
-        $result = $resend->emails->send([
+        $apiKey = getenv('RESEND_API_KEY');
+        $payload = json_encode([
                 'from'     => 'Logical City <onboarding@resend.dev>',
                 'to'       => ['samallela86@gmail.com'],
                 'subject'  => 'New Contact Message from ' . $name,
@@ -31,10 +30,25 @@ if (isset($_POST['submit_contact'])) {
                 'reply_to' => $email,
         ]);
 
-        if (isset($result->id)) {
+        $ch = curl_init('https://api.resend.com/emails');
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, [
+                'Authorization: Bearer ' . $apiKey,
+                'Content-Type: application/json',
+        ]);
+
+        $response = curl_exec($ch);
+        $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+        curl_close($ch);
+
+        $result = json_decode($response, true);
+
+        if ($httpCode === 200 || $httpCode === 201) {
             $success = true;
         } else {
-            $error = 'Message could not be sent. Please try again.';
+            $error = 'Message could not be sent. Error: ' . ($result['message'] ?? 'Unknown error');
         }
     }
 }
