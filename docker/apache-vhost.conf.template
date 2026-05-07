@@ -1,5 +1,5 @@
 <VirtualHost *:__PORT__>
-    ServerName _
+    ServerName localhost
     DocumentRoot /app
 
     <Directory /app>
@@ -14,6 +14,7 @@
     RewriteCond %{REQUEST_URI} !^/index\.php$ [NC]
     RewriteRule ^ /index.php [L]
 
+    # Serve static files from /app/frontend for non-PHP requests.
     RewriteCond %{REQUEST_URI} !^/frontend/
     RewriteCond %{REQUEST_URI} !\.php$ [NC]
     RewriteCond /app/frontend%{REQUEST_URI} -f
