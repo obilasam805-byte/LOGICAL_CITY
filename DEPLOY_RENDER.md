@@ -17,7 +17,7 @@ This repository includes a production Dockerfile at the project root.
 
 ## Environment variables
 
-Set any app-specific variables in Render (Dashboard → Environment), for example values used by your mail integrations.
+Set any app-specific variables in Render (Dashboard → Environment) that your deployment needs.
 
 ## Local verification
 

@@ -15,5 +15,4 @@ docker-compose*.yml
 
 .DS_Store
 
-README*
 DEPLOY_RENDER.md

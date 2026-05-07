@@ -17,7 +17,6 @@ WORKDIR /app
 COPY . .
 COPY --from=vendor /app/vendor /app/vendor
 
-ENV PORT=8080
 EXPOSE 8080
 
 CMD ["frankenphp", "run", "--config", "/app/Caddyfile"]
