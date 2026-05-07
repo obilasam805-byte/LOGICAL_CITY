@@ -3,7 +3,7 @@ set -eu
 
 PORT="${PORT:-80}"
 case "$PORT" in
-    ''|*[!0-9]*)
+    *[!0-9]*)
         echo "Invalid PORT value: $PORT" >&2
         exit 1
         ;;
