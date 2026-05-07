@@ -11,11 +11,17 @@ RUN composer install \
     --optimize-autoloader \
     --classmap-authoritative
 
-FROM dunglas/frankenphp:1-php8.3-alpine
+FROM php:8.3-apache
 WORKDIR /app
 
 COPY . .
 COPY --from=vendor /app/vendor /app/vendor
+COPY docker/apache-vhost.conf.template /etc/apache2/sites-available/000-default.conf.template
+COPY docker/start.sh /usr/local/bin/start-render
 
+RUN chmod +x /usr/local/bin/start-render \
+    && a2enmod rewrite \
+    && mkdir -p /app/frontend/uploads \
+    && chown -R www-data:www-data /app/frontend/uploads
 
-CMD ["frankenphp", "run", "--config", "/app/Caddyfile"]
+CMD ["start-render"]

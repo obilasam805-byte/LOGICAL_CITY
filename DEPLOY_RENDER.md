@@ -12,8 +12,14 @@ This repository includes a production Dockerfile at the project root.
 ## Port and binding
 
 - The container uses `PORT` (defaults to `80` when not provided).
-- `Caddyfile` listens on `:{$PORT:80}`, which binds to all interfaces (`0.0.0.0`) inside the container.
+- Apache listens on `0.0.0.0:$PORT` using runtime config generated at container startup.
 - On Render, `PORT` is set automatically.
+
+## Runtime stack
+
+- Runtime uses `php:8.3-apache` (instead of FrankenPHP).
+- Static assets are served from `/app/frontend`.
+- PHP requests are routed through the existing `/app/index.php` front controller.
 
 ## Environment variables
 

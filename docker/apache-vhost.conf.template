@@ -1,0 +1,30 @@
+<VirtualHost *:__PORT__>
+    ServerName localhost
+    DocumentRoot /app
+
+    <Directory /app>
+        Options FollowSymLinks
+        AllowOverride None
+        Require all granted
+    </Directory>
+
+    <Directory /app/frontend/uploads>
+        <FilesMatch "\.php$">
+            Require all denied
+        </FilesMatch>
+    </Directory>
+
+    RewriteEngine On
+
+    RewriteCond %{REQUEST_URI} \.php$ [NC]
+    RewriteCond %{REQUEST_URI} !^/index\.php$ [NC]
+    RewriteRule ^ /index.php [L]
+
+    # Serve static files from /app/frontend for non-PHP requests.
+    RewriteCond %{REQUEST_URI} !^/frontend/
+    RewriteCond %{REQUEST_URI} !\.php$ [NC]
+    RewriteCond /app/frontend%{REQUEST_URI} -f
+    RewriteRule ^(.*)$ /frontend/$1 [L]
+
+    FallbackResource /index.php
+</VirtualHost>
