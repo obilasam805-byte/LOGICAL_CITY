@@ -21,6 +21,7 @@ COPY docker/start.sh /usr/local/bin/start-render
 
 RUN chmod +x /usr/local/bin/start-render \
     && a2enmod rewrite \
+    && mkdir -p /app/frontend/uploads \
     && chown -R www-data:www-data /app/frontend/uploads
 
 CMD ["start-render"]
