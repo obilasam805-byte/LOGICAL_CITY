@@ -11,7 +11,7 @@ This repository includes a production Dockerfile at the project root.
 
 ## Port and binding
 
-- The container uses `PORT` (defaults to `8080` when not provided).
+- The container uses `PORT` (defaults to `80` when not provided).
 - `Caddyfile` listens on `:{$PORT:80}`, which binds to all interfaces (`0.0.0.0`) inside the container.
 - On Render, `PORT` is set automatically.
 
