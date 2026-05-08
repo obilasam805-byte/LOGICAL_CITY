@@ -20,7 +20,8 @@ COPY docker/apache-vhost.conf.template /etc/apache2/sites-available/000-default.
 COPY docker/start.sh /usr/local/bin/start-render
 
 RUN chmod +x /usr/local/bin/start-render \
-    && a2enmod rewrite \
+    && a2dismod mpm_event mpm_worker \
+    && a2enmod mpm_prefork rewrite \
     && mkdir -p /app/frontend/uploads \
     && chown -R www-data:www-data /app/frontend/uploads
 
